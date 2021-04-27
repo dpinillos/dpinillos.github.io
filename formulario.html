@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Noticias del Día</title>
 </head>
 <body>
-    <form>
-        <label for="dni">DNI</label>
-        <input type="radio" id="dni" name="tipo_documento" ><br>
-        <label for="pasaporte">Pasaporte</label>
-        <input type="radio" id="pasaporte" name="tipo_documento" checked><br>
-        <label for="otro">Otro</label>
-        <input type="radio" id="otro" name="tipo_documento" checked><br>
-    </form>
+    <header>
+        <h1>Diario de Novedades</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Documento</legend>
+                <label for="dni">DNI</label>
+                <input type="radio" id="dni" name="tipo_documento" ><br>
+                <label for="pasaporte">Pasaporte</label>
+                <input type="radio" id="pasaporte" name="tipo_documento" checked><br>
+                <label for="otro">Otro</label>
+                <input type="radio" id="otro" name="tipo_documento" checked><br>
+            </fieldset>
+        </form>
+        <form action="/index.html" target="_blank">
+            <fieldset>
+            <label for="codigo">Código del Producto</label>
+            <input type="text" id="codigo" name="nombre" ><br>
+            <label for="codigo">Nombre del Producto</label>
+            <input type="text" id="nombre" name="nombre" ><br>
+            </fieldset>
+            <input type="submit" value="Grabar">
+        </form>
+    </main>
 </body>
 </html>
