@@ -39,20 +39,55 @@
                 <source src="zoom_0.ogg" type="vide/ogg">
             </video>
         </fieldset>
+        <fieldset><legend>Ejemplo ol</legend>
+            <nav><h1>FODA</h1>
+                <ol>
+                    <li><a href="#">Fortalezas</a></li>
+                    <li><a href="#">Oportunidades</a></li>
+                    <li><a href="#">Debilidades</a></li>
+                    <li><a href="#">Amenazas</a></li>
+                </ol>
+             </nav>
+        </fieldset>
+        <br>
         <fieldset>
             <figure>
-                <img src="https://portal.andina.pe/EDPfotografia3/Thumbnail/2021/04/14/000766049W.jpg" alt="No me sale la imagen!!!!" width="200" height="200">
-                <figcaption>VAMOS CASTILLO Certus esta contigo!!! <figcaption>
+                <img src="https://img.unocero.com/2012/05/gamerEvolution.jpg" alt="No me sale la imagen!!!!" width="200" height="200">
+                <figcaption>Evolución según David!!! <figcaption>
             </figure>
         </fieldset>
+        <br>
         <fieldset>
-            <legend>Ejemplo de noscript</legend>
-            <noscript>
-                <h1>Se requiere Javascript</h1>
-                <p>No se puede usar esta pagina sin Javascript</p>
-            </noscript>
+            <h2>Ejemplo de Form</h2>
+        <form action="">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido"><br><br>
+        </form> 
         </fieldset>
-        
+        <input type="submit" value="Grabar">
+        <br>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        </canvas>
+    
+        <script>
+          var c = document.getElementById("myCanvas");
+          var ctx = c.getContext("2d");
+          
+          // Create gradient
+          var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+          grd.addColorStop(0, "red");
+          grd.addColorStop(1, "white");
+          
+          // Fill with gradient
+          ctx.fillStyle = grd;
+          ctx.fillRect(10, 10, 150, 80);
+          </script>
+            <noscript>
+            <h1>Se requiere Javascript</h1>
+            <p>No se puede usar esta pagina sin Javascript</p>
+            </noscript> 
 
     </main>
     <footer>
