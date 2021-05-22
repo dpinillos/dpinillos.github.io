@@ -1,0 +1,21 @@
+/*Modificación de cabeceras h2*/
+h2, h3, h4{
+    color: yellow;
+}
+
+.mensaje{
+    background-color:cadetblue;
+}
+
+#body{
+    background-image: url(https://www.certus.edu.pe/wp-content/uploads/2019/06/th.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+    
+}
+
+p.colortexto{
+    color: red;
+}
