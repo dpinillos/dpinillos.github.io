@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion - Objetos en JavaScript</title>
+</head>
+<body>
+    <div id="datos"></div>
+    <script>
+        //Declara una variable tipo Objetos con propiedades y métodos
+        var producto = {
+            codigo: "A23F01",
+            nombre: "Televisor",
+            precio: 2499.99,
+            colores: ["negro", "plata"],
+            calcularIgv: function () {
+                return this.precio*0.19;                
+            }
+        };
+        //Escribe las propiedades del producto y calcula el valor del IGV
+        document.getElementById('datos').innerHTML="Código: " + producto.codigo 
+        + " / Nombre: " +  producto.nombre + " / Precio: " + producto.precio + " / Colores: "
+        + producto.colores[0] + ", " + producto.colores[1] + " / IGV: " + producto.calcularIgv();
+    </script>
+</body>
+</html>
